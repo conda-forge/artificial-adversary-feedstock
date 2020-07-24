@@ -1,5 +1,5 @@
 {% set name = "artificial-adversary" %}
-{% set version = "1.1" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/airbnb/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: e086e63701f8df5978f08d35f2dd0bfb486241fd92925cae76c0c59ce6adc990
+  sha256: f6f2824d24465ebd2b84ceb8975cbed90f5e51ede8d32640da6ede1e6b083742
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv "
+  script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
